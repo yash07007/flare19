@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+// @import "p.css";
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro';
+
+    #home{
+        background-color: #000;
+        color: #fff;
+        min-height: 100vh;
+        max-height: 100vh;
+        // overflow-y: hidden;
+
+        canvas {
+            position:absolute;
+            top:0;
+            left:0;
+        }
+
+    }
+    #about-us{
+        background-color: white;
+        min-height: 100vh;
+        max-height: 100vh;
+
+        .container-fluid{
+            .row{
+                height: 100vh;
+                .col-md-6{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    h2{
+                        margin: 30px;
+                        font-size: 3.6rem;
+                        color: gold;
+                    }
+                    &:first-child{
+                        background-color: purple;
+                    }
+                    &:last-child{
+                        background-color: gold;
+                        p{
+                            color: black;
+                            margin-top: 40px;
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #section-5{
+        background-color: pink;
+        min-height: 100vh;
+        max-height: 100vh;
+
+    }
+    #contact-us{
+        background-color: purple;
+        min-height: 100vh;
+        max-height: 100vh;
+
+        .container{
+            .row{
+                [class*="col"]{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 130px 0 0 0;
+                    color: gold;
+
+                    .heading{
+                        h1{
+                            font-weight: 700;
+                            font-size: 72px;
+                            background: -webkit-linear-gradient(#fdc830, #f37335);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
+                    // .map{
+                    //     border: 10px solid gold;
+                    //     border-style: ridge;
+                    // }
+                    hr.hr {
+                        border: 0;
+                        height: 1px;
+                        background: gold;
+                        background-image: linear-gradient(to right, purple, gold, purple);
+                        margin: 30px auto;
+                        width: 70%;
+
+                    }
+                    a{
+                        border-radius: 30px;
+                    }
+                    .socialTray{
+                        margin-top: 20px;
+                        a{
+                            color: gold;
+                            font-size: 30px;
+                            letter-spacing: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+@media(max-width:768px){
+    #about-us{
+        .col-md-6{
+            &:first-child{
+                background-color: gold !important;
+                h2{
+                    color: black !important;
+                    font-size: 2.7rem !important;
+                    margin: 10px 0 -10px 0 !important;
+                }
+            }
+        }
+        p{
+            font-size: 1.2rem !important;
+            text-align: center;
+        }
+    }
+    #contact-us{
+        .container{
+            .row{
+                [class*="col"]{
+                    padding: 50px 0 0 0 !important;
+                }
+            }
+        }
+    }
+}
+@media(max-width:1100px){
+    #about-us{
+        .col-md-6{
+            overflow: scroll;
+        }
+        p{
+            font-size: 0.96rem !important;
+        }
+    }
+}

@@ -1,11 +1,16 @@
 body{
-    background-image: url("/imgs/blackwall.jpg");
-    // background-image: url("/imgs/blacksand.jpg");
-    // background-image: url("/imgs/wood.jpg");
-    // background-image: url("/imgs/astro.jpg");
-    // background-image: url("/imgs/dirtywall.jpg");
+    background-color: black;
+    //background-image: url("/imgs/dirtywall.jpg");
+    background: #f12711;
+    background: -webkit-linear-gradient(to right, #f12711, #f5af19);
+    background: linear-gradient(to right, #f12711, #f5af19);
     background-position: center;
     background-size: cover;
     color: white;
 
+    form{
+        #tid{
+            overflow: hidden;
+        }
+    }
 }
