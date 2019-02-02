@@ -14,15 +14,17 @@
 var background = document.getElementById("bgCanvas"),
   bgCtx = background.getContext("2d"),
   width = window.innerWidth,
-  height = document.body.offsetHeight;
-
-height < 400 ? (height = 400) : height;
+  // height = document.body.offsetHeight;
+  height = document.querySelector('#home').style.height;
+  // height = "100vh";
+  height < 400 ? (height = 800) : height;
 
 background.width = width;
 background.height = height;
 
 function Terrain(options) {
   options = options || {};
+  // x =
   this.terrain = document.createElement("canvas");
   this.terCtx = this.terrain.getContext("2d");
   this.scrollDelay = options.scrollDelay || 90;
@@ -53,7 +55,7 @@ function Terrain(options) {
     displacement *= 0.6;
   }
 
-  document.body.appendChild(this.terrain);
+  document.querySelector('#home').appendChild(this.terrain);
 }
 
 Terrain.prototype.update = function() {
@@ -192,3 +194,4 @@ function animate() {
   requestAnimationFrame(animate);
 }
 animate();
+console.log(height);

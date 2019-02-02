@@ -8,9 +8,31 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="css/hover.css" rel="stylesheet">
 </head>
 <body>
     <div id="home">
+        <h1 id="mhead" class="hvr-pulse-grow">Menu</h1>
+        <h1 id="spon" class="hvr-pulse-grow">Sponsers</h1>
+        <div class="menu">
+            <ul>
+                <li class="animated zoomOutLeft hvr-bounce-to-bottom" ><a href="#HOME">HOME</a></li>
+                <li class="animated zoomOutLeft hvr-bounce-to-bottom" ><a href="#ABOUT_US">ABOUT US</a></li>
+                <li class="animated zoomOutLeft hvr-bounce-to-bottom" ><a href="#THEME">SPONSERS</a></li>
+                <li class="animated zoomOutLeft hvr-bounce-to-bottom" ><a href="#STATISTICS">EVENTS</a></li>
+                <li class="animated zoomOutLeft hvr-bounce-to-bottom" ><a href="#SOCIAL_CAUSE">TEAM</a></li>
+                <li class="animated zoomOutLeft hvr-bounce-to-bottom" ><a href="#SITE_MAP">CONTACT US</a></li>
+                <li class="animated zoomOutLeft hvr-bounce-to-bottom" ><a href="#SITE_MAP">REGISTER</a></li>
+            </ul>
+        </div>
+        <img src="imgs/Flare19.png" alt="LOGO">
+        <div class="flex-center">
+            <i class="fa fa-twitter fa-4x icon-3d"></i>
+            <i class="fa fa-facebook fa-4x icon-3d"></i>
+            <i class="fa fa-instagram fa-4x icon-3d"></i>
+            <i class="fa fa-whatsapp fa-4x icon-3d"></i>
+        </div>
         <canvas id="bgCanvas"></canvas>
     </div>
     <div id="about-us">
@@ -31,7 +53,9 @@
             </div>
         </div>
     </div>
-    <div id="section-5">.</div>
+    <div id="section-5">
+        <!-- <img src="imgs/Flare19.png" alt="LOGO"> -->
+    </div>
     <div id="contact-us">
         <div class="container">
             <div class="row">
@@ -49,7 +73,7 @@
                     <h4>Gujarat-382421</h4>
                     <h4>Contact: 9999999999</h4>
                     <hr class="hr">
-                    <a  href="https://goo.gl/maps/JLF7ddXwvrR2" class="btn btn-lg btn-warning">
+                    <a  href="https://goo.gl/maps/JLF7ddXwvrR2" class="btn btn-lg btn-light hvr-icon-wobble-horizontal">
                         Reach us
                         <i class="fa fa-chevron-circle-right hvr-icon"></i>
                     </a>
@@ -66,6 +90,25 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/home1.js"></script>
+    <script type="text/javascript" src="js/terrian.js"></script>
+    <script type="text/javascript">
+        var mBtnFlag = 1;
+        var x = 0;
+        for (var i = 0; i < $(".menu ul li").length; i++) {
+            x += 0.2
+            $(".menu ul li")[i].style.animationDelay = String(x) + "s";
+        }
+        $("#mhead").on('click',function () {
+            if (mBtnFlag) {
+                $(".menu ul li").removeClass("zoomOutLeft");
+                $(".menu ul li").addClass("zoomInLeft");
+                mBtnFlag = 0;
+            } else {
+                $(".menu ul li").removeClass("zoomInLeft");
+                $(".menu ul li").addClass("zoomOutLeft");
+                mBtnFlag = 1;
+            }
+        });
+    </script>
 </body>
 </html>

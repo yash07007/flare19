@@ -9,8 +9,10 @@
   "author": "Yash Solanki",
   "license": "MIT",
   "dependencies": {
+    "animate.css": "^3.7.0",
     "bootstrap": "^4.0.0-beta",
     "font-awesome": "^4.7.0",
+    "hover.css": "^2.3.2",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.4"
   },

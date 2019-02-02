@@ -34,4 +34,9 @@ gulp.task('fa', function () {
     .pipe(gulp.dest('src/css'));
 });
 
-gulp.task('default', ['js', 'serve', 'fa', 'fonts']);
+gulp.task('css', function () {
+    return gulp.src(['node_modules/animate.css/animate.css','node_modules/hover.css/css/hover.css'])
+    .pipe(gulp.dest('src/css'));
+});
+
+gulp.task('default', ['js', 'serve', 'fa', 'fonts', 'css']);
