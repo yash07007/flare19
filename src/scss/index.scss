@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Monoton|Righteous');
 
 $primary-color: #191D4C;
 $secondary-color: rgb(17,20,40);
@@ -8,7 +10,7 @@ $blueColor: rgba(33, 150, 243, 1);
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Source Sans Pro';
+    font-family: 'Lobster';
     width: 100vw;
 
     #home{
@@ -17,6 +19,7 @@ body{
         min-height: 100vh;
         max-height: 100vh;
         width: inherit;
+        font-family: 'Cinzel';
         overflow: hidden;
         h1{
             position: absolute;
@@ -134,38 +137,74 @@ body{
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
-                    h2{
-                        margin: 30px;
-                        font-size: 3.6rem;
-                        color: white;
-                    }
                     &:first-child{
-                        background-color: black;
+                        background-color: rgb(10, 10, 5);
+                        h2{
+                            margin: 30px;
+                            font-size: 4.6rem;
+                            color: white;
+                            font-family: 'Lobster';
+                        }
                     }
                     &:last-child{
                         background-color: $primary-color;
                         p{
                             color: white;
                             margin-top: 40px;
-                            font-size: 1.3rem;
+                            font-size: 1.1rem;
+                            font-family: 'Cinzel';
+
                         }
                     }
                 }
             }
         }
     }
-    #section-5{
-        background-color: pink;
+    #showcase{
+        color: #fff;
+        background-color: gold;
         min-height: 100vh;
         max-height: 100vh;
+        overflow: hidden;
         width: inherit;
-
+        .container-fluid{
+            .row{
+                z-index: 1;
+                height: 100vh;
+                .col-md-6{
+                    h2{
+                        color: black;
+                        left: 50%;
+                        transform: translate(-50%);
+                        top: 7%;
+                        font-size: 2.8rem;
+                        position: absolute;
+                    }
+                    &:first-child{
+                        .swiper-container {
+                            margin: 0;
+                            top:25vh;
+                            left: 8vh;
+                            width: 560px;
+                            height: 315px;
+                        }
+                    }
+                    &:last-child{
+                        iframe{
+                            margin: 25vh 3vw 0 ;
+                            z-index: 1;
+                        }
+                    }
+                }
+            }
+        }
     }
     #contact-us{
         background-color: $primary-color;
         min-height: 100vh;
         max-height: 100vh;
         width: inherit;
+        color: white;
 
         .container{
             .row{
@@ -175,7 +214,6 @@ body{
                     justify-content: center;
                     align-items: center;
                     padding: 130px 0 0 0;
-                    color: white;
 
                     .heading{
                         h1{
@@ -299,5 +337,17 @@ body{
         p{
             font-size: 0.96rem !important;
         }
+    }
+}
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
     }
 }

@@ -11,7 +11,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('js', function () {
-    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/umd/popper.min.js'])
+    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/umd/popper.min.js','node_modules/swiper/dist/js/swiper.min.js'])
     .pipe(gulp.dest('src/js'))
     .pipe(browserSync.stream());
 });
@@ -35,7 +35,7 @@ gulp.task('fa', function () {
 });
 
 gulp.task('css', function () {
-    return gulp.src(['node_modules/animate.css/animate.css','node_modules/hover.css/css/hover.css'])
+    return gulp.src(['node_modules/animate.css/animate.css','node_modules/hover.css/css/hover.css','node_modules/swiper/dist/css/swiper.min.css'])
     .pipe(gulp.dest('src/css'));
 });
 

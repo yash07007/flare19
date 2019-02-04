@@ -14,7 +14,8 @@
     "font-awesome": "^4.7.0",
     "hover.css": "^2.3.2",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.4"
+    "popper.js": "^1.14.4",
+    "swiper": "^4.4.6"
   },
   "devDependencies": {
     "browser-sync": "^2.24.6",
