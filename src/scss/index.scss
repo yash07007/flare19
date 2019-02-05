@@ -12,6 +12,7 @@ body{
     padding: 0;
     font-family: 'Lobster';
     width: 100vw;
+    overflow-x: hidden;
 
     #home{
         background-color: #000;
@@ -95,7 +96,7 @@ body{
             z-index: 1;
         }
         .flex-center {
-            width: 100%;
+            // width: 100%;
             min-height: 50vh;
             background: #000;
             display: flex;
