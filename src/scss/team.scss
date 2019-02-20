@@ -1,13 +1,36 @@
 body{
+    .background{
+        width: 100%;
+        height: 100%;
+        background: url("/imgs/bpage1.jpg");
+        background-repeat: no-repeat;
+        position: fixed;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
+    .jumbotron{
+        border-bottom: 5px solid yellow;
+        h1{
+            text-transform: uppercase;
+        }
+    }
     .row{
         height: 300px;
         img{
         	max-width:100%;
         	width:100%;
-        	height:auto;
+        	height:250px;
         	border-radius:50%;
         }
-
+        h2{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+            text-align:center;
+        }
     }
 
     .modal-dialog{
@@ -27,6 +50,77 @@ body{
             .modal-body{
                 .owl-carousel{
                     margin-top: 5%;
+
+                  // ********************************
+                  .our-team{
+                        text-align: center;
+                        border-radius: 20px;
+                        overflow: hidden;
+                        position: relative;
+                        transition: all 0.3s ease 0s;
+
+                        .pic{
+                            transition: all 0.3s ease 0s;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        &:hover{
+                            .pic{
+
+                                transform: scale(0.8) translateY(-10%);
+                            }
+                            .team-content{
+                                opacity: 1;
+                                bottom: -10px;
+                            }
+                        }
+                        .team-content{
+                            width: 100%;
+                            padding: 7px 15px;
+                            background: rgba(#000000, 0.7);
+                            position: absolute;
+                            bottom: -30%;
+                            right: 0;
+                            opacity: 0;
+                            transition: all 0.3s ease 0s;
+                        }
+                        .title{
+                            font-size: 22px;
+                            color: #fff;
+                            text-transform: capitalize;
+                            letter-spacing: 1px;
+                            margin: 0 0 5px 0;
+                        }
+                        .social{
+                            padding: 0;
+                            margin: 0;
+                            list-style: none;
+                            transition: all 0.35s ease 0s;
+                            li{
+                                display: inline-block;
+                                margin: 0 5px 0 0;
+                                a{
+                                    display: block;
+                                    width: 40px;
+                                    height: 40px;
+                                    line-height: 40px;
+                                    border-radius: 15px 0 15px 0;
+                                    font-size: 20px;
+                                    color: #fff;
+                                    overflow: hidden;
+                                    z-index: 1;
+                                    position: relative;
+                                    transition: all 0.35s ease 0s;
+                                    &:hover{
+                                        color: blue;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                  // *********************
                 }
             }
         }
