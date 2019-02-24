@@ -7,7 +7,6 @@
     <title>Flare</title>
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/swiper.min.css">
@@ -15,8 +14,11 @@
 </head>
 <body>
     <div id="home">
-        <h1 id="mhead" class="hvr-pulse-grow">Menu</h1>
-        <h1 id="spon" class="hvr-pulse-grow">Sponsers</h1>
+        <canvas id="bgCanvas"></canvas>
+        <div class="heads">
+            <h1 id="mhead" class="hvr-pulse-grow">Menu</h1>
+            <h1 id="spon" class="hvr-pulse-grow">Sponsers</h1>
+        </div>
         <div class="menu">
             <ul>
                 <li class="animated zoomOutLeft hvr-bounce-to-bottom" ><a href="index.html#home">HOME</a></li>
@@ -28,14 +30,17 @@
                 <li class="animated zoomOutLeft hvr-bounce-to-bottom" ><a href="form.html">REGISTER</a></li>
             </ul>
         </div>
-        <img src="imgs/Flare19.png" alt="LOGO">
+        <img id="logo" src="imgs/Flare19.png" alt="LOGO">
+        <!-- <div class="btns">
+            <a href="#" class="btn btn-light">Register Here</a>
+            <a href="#" class="btn btn-light">Register Here2</a>
+        </div> -->
         <div class="flex-center">
             <i class="fa fa-twitter fa-4x icon-3d"></i>
             <i class="fa fa-facebook fa-4x icon-3d"></i>
             <i class="fa fa-instagram fa-4x icon-3d"></i>
             <i class="fa fa-whatsapp fa-4x icon-3d"></i>
         </div>
-        <canvas id="bgCanvas"></canvas>
     </div>
     <div id="about-us">
         <div class="container-fluid">
@@ -65,41 +70,30 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/500/500/abstract/1)" ></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/500/500/abstract/2)" ></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/500/500/abstract/3)" ></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/500/500/abstract/4)" ></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/500/500/abstract/5)" ></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/500/500/abstract/6)" ></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/500/500/abstract/7)" ></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/500/500/abstract/8)" ></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/500/500/abstract/9)" ></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/500/500/abstract/10)" ></div>
+                            <div class="swiper-slide" style="background-image:url(/imgs/gallery/1.JPG); background-position:center; background-size:cover" ></div>
+                            <div class="swiper-slide" style="background-image:url(/imgs/gallery/2.JPG); background-position:center; background-size:cover" ></div>
+                            <div class="swiper-slide" style="background-image:url(/imgs/gallery/3.JPG); background-position:center; background-size:cover" ></div>
+                            <div class="swiper-slide" style="background-image:url(/imgs/gallery/4.jpg); background-position:center; background-size:cover" ></div>
+                            <div class="swiper-slide" style="background-image:url(/imgs/gallery/5.JPG); background-position:center; background-size:cover" ></div>
+                            <div class="swiper-slide" style="background-image:url(/imgs/gallery/6.JPG); background-position:center; background-size:cover" ></div>
+                            <div class="swiper-slide" style="background-image:url(/imgs/gallery/7.jpg); background-position:center; background-size:cover" ></div>
+                            <div class="swiper-slide" style="background-image:url(/imgs/gallery/8.JPG); background-position:center; background-size:cover" ></div>
+                            <div class="swiper-slide" style="background-image:url(/imgs/gallery/9.JPG); background-position:center; background-size:cover" ></div>
                         </div>
-                        <!-- pagination -->
-                        <!-- <div class="swiper-pagination"></div> -->
-                        <!-- navigation buttons -->
-                        <!-- <div class="swiper-button-prev"></div> -->
-                        <!-- <div class="swiper-button-next"></div> -->
-                        <!-- scrollbar -->
-                        <!-- <div class="swiper-scrollbar"></div> -->
                     </div>
                 </div>
                 <div class="col-md-6">
                     <h2>Flare'18 Aftermovie </h2>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Q7FM63dk1Zs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/Q7FM63dk1Zs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </div>
     <div id="contact-us">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-12 d-none d-lg-block">
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.3796976496933!2d72.66333241444464!3d23.156338117127394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e802cfe647e33%3A0x983a11b5cb484f15!2sPandit+Deendayal+Petroleum+University!5e0!3m2!1sen!2sin!4v1541449586686"
-                        width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.3796976496933!2d72.66333241444464!3d23.156338117127394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e802cfe647e33%3A0x983a11b5cb484f15!2sPandit+Deendayal+Petroleum+University!5e0!3m2!1sen!2sin!4v1541449586686" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
                 <div class="col-lg-6 col-md-12 text-center">
                     <div class="heading"><h1>Contact Us </h1></div>
