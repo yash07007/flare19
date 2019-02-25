@@ -20,7 +20,7 @@ body{
         background-color: #000;
         color: #fff;
         min-height: 100vh;
-        // max-height: 100vh;
+        max-height: 100vh;
         width: 100vw;
         font-family: 'Cinzel';
         overflow: hidden;
@@ -32,25 +32,47 @@ body{
             left:0;
             z-index: 0;
         }
+        .container-fluid{
+            z-index: 1;
+            .row{
+                text-align: center;
 
-        .heads{
-            display: flex;
-
-            h1{
-                position: absolute;
-                width: 70px;
-                color: white;
-                z-index: 1;
-                text-transform: uppercase;
-                font-size: 1.5rem;
-                top: 10%;
-                cursor: pointer;
-
-                &#mhead{
-                    left: 8%;
+                &:nth-child(1),&:nth-child(4){
+                    padding: 50px 0;
                 }
-                &#spon{
-                    right: 10%;
+
+                h1{
+                    color: white;
+                    display: inline-block;
+                    z-index: 1;
+                    text-transform: uppercase;
+                    font-size: 2.0rem;
+                    cursor: pointer;
+                }
+                .left{
+                    text-align: left;
+                    #mhead{
+                        margin-left: 50px;
+                    }
+                }
+                .right{
+                    text-align: right;
+                    #spon{
+                        margin-right: 50px;
+                    }
+                }
+                img#logo{
+                    width: 500px;
+                    height: auto;
+                    z-index: 1;
+                }
+                .btn{
+                    border-radius: 50px;
+                    padding: 15px 0;
+                }
+                .btn-light{
+                    color: $primary-color;
+                    font-weight: bold;
                 }
             }
         }
@@ -89,24 +111,9 @@ body{
                 }
             }
         }
-        img#logo{
-            // position: absolute;
-            align-self: center;
-            width: 500px;
-            height: auto;
-            top: 10%;
-            // left: 50%;
-            // transform: translate(-50%);
-            z-index: 1;
-        }
-        .btns{
-            position: absolute;
-            z-index: 1;
-        }
         .flex-center {
-            // width: 100%;
             min-height: 50vh;
-            background: #000;
+            // background: #000;
             display: flex;
             flex-direction: column;
             position: absolute;
@@ -154,7 +161,7 @@ body{
                         p{
                             color: white;
                             margin-top: 40px;
-                            font-size: 1.1rem;
+                            font-size: 1.4rem;
                             font-family: 'Cinzel';
 
                         }
@@ -267,30 +274,50 @@ body{
 }
 @media(max-width:768px){
     #home{
-        max-height: 100vh !important;
-        overflow-y: hidden !important;
-        img{
-            margin-top: 50px;
-            // transform: translate(-54%) scale(0.9) !important;
-            // z-index: 1 !important;
-            width: 100vw !important;
-        }
-        #mhead{
-            top: 5% !important;
-        }
-        #spon{
-            top: 5% !important;
-        }
-        .menu ul{
-            top: 15% !important;
-            left: 0 !important;
-            width: 80%;
-            z-index: 2 !important;
-            li{
-                background-color:  rgba(#191d4c, 1) !important;
+        .container-fluid{
+            .row{
+
+                &:nth-child(1),&:nth-child(4){
+                    padding: 30px 0 !important;
+                }
+
+                h1{
+                    font-size: 1.5rem !important;
+                }
+                .left{
+                    #mhead{
+                        margin-left: 5px !important;
+                    }
+                }
+                .right{
+                    #spon{
+                        margin-right: 5px !important;
+                    }
+                }
+                img#logo{
+                    width: 100vw !important;
+                    margin: 60px 0;
+                }
+                .btn{
+                    padding: 10px 0 !important;
+                    margin: 20px 0;
+                    width: 70%;
+                    margin-left: 15%;
+                }
             }
         }
-        .flex-center{
+        .menu ul {
+            top: 15% !important;
+            left: 0 !important;
+            width: 90%;
+            z-index: 2 !important;
+
+            li{
+                background-color: rgba(#191d4c, 1) !important;
+            }
+        }
+
+        .flex-center {
             display: none !important;
         }
     }
@@ -298,19 +325,20 @@ body{
         .col-md-6{
             &:first-child{
                 background-color: $primary-color !important;
-
                 h2{
                     color: white !important;
+                    margin: 0 !important;
                     font-size: 3rem !important;
                 }
             }
             &:last-child{
                 overflow: hidden;
+                p{
+                    margin-top: 0 !important;
+                    font-size: 0.96rem !important;
+                    text-align: center;
+                }
             }
-        }
-        p{
-            font-size: 0.96rem !important;
-            text-align: center;
         }
     }
     #showcase{

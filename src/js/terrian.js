@@ -17,7 +17,7 @@ var background = document.getElementById("bgCanvas"),
   // height = document.body.offsetHeight;
   height = document.querySelector('#home').style.height;
   // height = "100vh";
-  height < 400 ? (height = 800) : height;
+  height < 400 ? (height = 835) : height;
 
 background.width = width;
 background.height = height;
