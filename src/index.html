@@ -20,18 +20,18 @@
                     <h1 id="mhead" class="hvr-pulse-grow">Menu</h1>
                 </div>
                 <div class="col-6 right">
-                    <h1 id="spon" class="hvr-pulse-grow">Sponsors</h1>
+                    <h1 id="spon" class="hvr-pulse-grow" onclick="window.location.href='sponsors.html'">Sponsors</h1>
                 </div>
             </div>
             <div class="menu">
                 <ul>
                     <li class="animated zoomOutLeft hvr-bounce-to-bottom" ><a href="index.html#home">HOME</a></li>
                     <li class="animated zoomOutLeft hvr-bounce-to-bottom" ><a href="index.html#about-us">ABOUT US</a></li>
-                    <li class="animated zoomOutLeft hvr-bounce-to-bottom" ><a href="sponsers.html">SPONSERS</a></li>
+                    <li class="animated zoomOutLeft hvr-bounce-to-bottom" ><a href="sponsors.html">SPONSORS</a></li>
                     <li class="animated zoomOutLeft hvr-bounce-to-bottom" ><a href="events.html">EVENTS</a></li>
                     <li class="animated zoomOutLeft hvr-bounce-to-bottom" ><a href="team.html">TEAM</a></li>
                     <li class="animated zoomOutLeft hvr-bounce-to-bottom" ><a href="index.html#contact-us">CONTACT US</a></li>
-                    <li class="animated zoomOutLeft hvr-bounce-to-bottom" ><a href="form.html">REGISTER</a></li>
+                    <!-- <li class="animated zoomOutLeft hvr-bounce-to-bottom" ><a href="form.html">REGISTER</a></li> -->
                 </ul>
             </div>
             <div class="row">
@@ -41,16 +41,29 @@
             </div>
             <div class="row">
                 <div class="col-md-3 ml-auto">
-                    <a href="#" class="btn btn-light btn-block">Register Here</a>
+                    <a href="#" class="btn btn-light btn-block" data-toggle="modal" data-target="#m">Register</a>
                 </div>
                 <div class="col-md-3 mr-auto">
-                    <a href="#" class="btn btn-light btn-block">Register Here2</a>
+                    <a href="#" class="btn btn-light btn-block disabled">For Accomodation</a>
+                </div>
+            </div>
+            <div id="m" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title text-dark">Register</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="ae-embed-org-plugin" data-type="org" data-title="false" data-id="14816977" data-height="" data-width="" data-transparency="true" data-header="0" data-border="0" data-layout="center" style="width: 100%;"> </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="flex-center">
-                <i class="fa fa-facebook fa-4x icon-3d"></i>
-                <i class="fa fa-instagram fa-4x icon-3d"></i>
-                <i class="fa fa-whatsapp fa-4x icon-3d"></i>
+                <a href="https://www.facebook.com/flarepdpu/"><i class="fa fa-facebook fa-4x icon-3d"></i></a>
+                <a href="https://www.instagram.com/flare_pdpu/"><i class="fa fa-instagram fa-4x icon-3d"></i></a>
+                <a href="mailto:Culturalcommittee@pdpu.ac.in"><i class="fa fa-envelope fa-4x icon-3d"></i></a>
             </div>
         </div>
         <canvas id="bgCanvas"></canvas>
@@ -113,17 +126,17 @@
                     <h2>Address</h2>
                     <h3>Pandit Deendayal Petroleum University</h3>
                     <h4>Raysan, Gandhinagar</h4>
-                    <h4>Gujarat-382421</h4>
-                    <h4>Contact: 9999999999</h4>
+                    <h4>Gujarat-382007</h4>
+                    <h4>Contact: 9408757841</h4>
                     <hr class="hr">
                     <a  href="https://goo.gl/maps/JLF7ddXwvrR2" class="btn btn-lg btn-light hvr-icon-wobble-horizontal">
                         Reach us
                         <i class="fa fa-chevron-circle-right hvr-icon"></i>
                     </a>
                     <div class="socialTray">
-                          <a href=""><i class="a1 fa fa-facebook"></i></a>
-                          <a href=""><i class="a1 fa fa-instagram"></i></a>
-                          <a href=""><i class="a1 fa fa-envelope"></i></a>
+                        <a href="https://www.facebook.com/flarepdpu/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/flare_pdpu/"><i class="fa fa-instagram"></i></a>
+                        <a href="mailto:Culturalcommittee@pdpu.ac.in"><i class="fa fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
@@ -136,6 +149,7 @@
     <script type="text/javascript" src="js/terrian.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script type="text/javascript" src="js/gallery.js"></script>
+    <script src="https://allevents.in/scripts/public/ae-plugin-embed-lib.js"></script>
     <script type="text/javascript">
         var mBtnFlag = 1;
         var x = 0;

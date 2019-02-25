@@ -17,9 +17,10 @@ html, body {
   text-transform: uppercase;
   height: 40px;
   width: 80px; }
-  #menu a {
-    text-decoration: none;
-    color: #fff; }
+
+#menu a {
+  text-decoration: none;
+  color: #fff; }
 
 .background {
   width: 100%;
@@ -201,3 +202,9 @@ html, body {
 .close {
   font-size: 60px;
   margin-right: 1%; }
+
+.reg {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  bottom: 1%; }
