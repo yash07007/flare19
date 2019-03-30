@@ -1,39 +1,41 @@
 <?php
 session_start();
+// $errors = array();
 
-// initializing variables
-$username = "";
-$email    = "";
-$errors = array();
-
-// connect to the database
-$db = mysqli_connect('localhost', 'root', '', 'flarereg');
-
-// REGISTER USER
 if (isset($_POST['submit'])) {
-  // receive all input values from the form
-  $tname = mysqli_real_escape_string($db, $_POST['tname']);
+  
+  $rname = "";
+  $uni = "";
+  $phone = "";
+  $email = "";
+  $event = "";
+  $days = "";
+  $db = "";
+  
+   $db = mysqli_connect('localhost', 'flareslp_flare19', '12345', 'flareslp_flare2019');
+  
   $rname = mysqli_real_escape_string($db, $_POST['rname']);
   $uni = mysqli_real_escape_string($db, $_POST['uni']);
   $phone = mysqli_real_escape_string($db, $_POST['phone']);
   $email = mysqli_real_escape_string($db, $_POST['email']);
   $event = mysqli_real_escape_string($db, $_POST['event']);
+  $days = mysqli_real_escape_string($db, $_POST['days']);
+  
+  echo $rname;
+  echo Yash1112;
 
-  // form validation: ensure that the form is correctly filled ...
-  // by adding (array_push()) corresponding error unto $errors array
-  if (empty($rname)) { array_push($errors, "Representative Name is required"); }
-  if (empty($uni)) { array_push($errors, "University Name is required"); }
-  if (empty($phone)) { array_push($errors, "Mobile Number is required"); }
-  if (empty($email)) { array_push($errors, "Email is required"); }
+//   if (empty($rname)) { array_push($errors, "Representative Name is required"); }
+//   if (empty($uni)) { array_push($errors, "University Name is required"); }
+//   if (empty($phone)) { array_push($errors, "Mobile Number is required"); }
+//   if (empty($email)) { array_push($errors, "Email is required"); }
 
-  // Finally, register user if there are no errors in the form
-  if (count($errors) == 0) {
-
-  	$query = "INSERT INTO regdata (tname, rname, uni, phone, email, event)
-  			  VALUES('$tname', '$rname', '$uni', '$phone', '$email', '$event')";
-  	mysqli_query($db, $query);
-  	$_SESSION['success'] = "Successfully Registered";
-  	header('location: index.php');
-  }
+  	$query = "INSERT INTO accdata (rname, uni, phone, email, event, days)
+  			  VALUES('$rname', '$uni', '$phone', '$email', '$event', '$days')";
+  			  
+  	echo $query;
+  	
+  	$x = mysqli_query($db, $query);
+  	echo $x;
+    //header('Location: thankYou.html');
 }
 ?>

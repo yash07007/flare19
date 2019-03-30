@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Germania+One');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+/* Navbar */
+.mnavbar{
+    display: block;
+    margin: 20px 20px;
+    font-size: 0;
+    overflow: hidden;
+}
+.mnavbar a{
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    width: 23%;
+    margin: 1%;
+    text-decoration: none;
+    color: #292929;
+    background-color: white;
+}
+/* Utilities */
+.hide{
+    display: none;
+}
+.act{
+    background-color: red !important;
+}
+.mobView{
+    font-family: 'Germania One', cursive;
+}
+.mpage{
+    /* min-height: 100vh; */
+    display: block;
+    color: white;
+    /* border-bottom: 1px solid red; */
+}
+.mpage h2{
+    text-align: center;
+    font-size: 60px;
+    margin: 20px 0;
+}
+.mevent{
+    /* border: 1px solid white; */
+    margin: 10px;
+    /* height: 300px; */
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: red;
+    color: white;
+}
+.mpage h3{
+    padding-left: 10px;
+    background: black;
+}
+.mpage .mtab{
+    /* height: 259px; */
+    width: 100%;
+    font-size: 0;
+}
+.mpage .mtab .text{
+    height: 100%;
+    width: 70%;
+    /* border: 1px solid blue; */
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 15px;
+    text-align: justify;
+    overflow: scroll;
+    font-family: 'Quicksand', sans-serif;
+}
+.mpage .mtab .info{
+    height: 100%;
+    width: 30%;
+    /* border: 1px solid blue; */
+    display: inline-block;
+    padding: 5px;
+    font-size: 15px;
+    overflow: scroll;
+    font-family: 'Quicksand', sans-serif;
+}
+.mpage .mtab .info .mcontact{
+    text-align: center;
+}
+.mpage .mtab .info .mcontact h4{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.mpage0{
+    background: red;
+    padding-top: 100px;
+    height: 100vh;
+}
+.mpage0 h1{
+    font-size: 60px;
+    margin: 50px 0;
+    text-align: center;
+    color: white;
+}
+.mpage0 .container .row{
+    margin: 10px 0;
+}
+.mpage0 .container .row .col{
+    display: block;
+    height: 50px;
+    border: 3px solid white;
+    margin: 0 5px;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    line-height: 44px;
+    font-size: 25px
+}
+.mpage0 .container .row .col a,.mpage0 .container .row .col a:hover{
+    color: white;
+    text-decoration: none;
+}

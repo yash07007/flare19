@@ -7,8 +7,8 @@ var overlaymadhu=document.getElementsByClassName("overlaymadhu")[0];
 var overlayquill=document.getElementsByClassName("overlayquill")[0];
 var overlaystr=document.getElementsByClassName("overlaystr")[0];
 var overlaybottle=document.getElementsByClassName("overlaybottle")[0];
-var overlaysrw=document.getElementsByClassName("overlaysrw")[0];
-var overlaybookh=document.getElementsByClassName("overlaybookh")[0];
+// var overlaysrw=document.getElementsByClassName("overlaysrw")[0];
+// var overlaybookh=document.getElementsByClassName("overlaybookh")[0];
 var overlaykav=document.getElementsByClassName("overlaykav")[0];
 var overlayspell=document.getElementsByClassName("overlayspell")[0];
 var overlaylw=document.getElementsByClassName("overlaylw")[0];
@@ -17,7 +17,7 @@ var overlaydebsoc=document.getElementsByClassName("overlaydebsoc")[0];
 var overlayamet=document.getElementsByClassName("overlayamet")[0];
 var overlaysm=document.getElementsByClassName("overlaysm")[0];
 var overlaymg=document.getElementsByClassName("overlaymg")[0];
-var overlayth=document.getElementsByClassName("overlayth")[0];
+// var overlayth=document.getElementsByClassName("overlayth")[0];
 var overlaymelodia=document.getElementsByClassName("overlaymelodia")[0];
 var overlayat=document.getElementsByClassName("overlayat")[0];
 var nzest=document.getElementById("nzest");
@@ -42,7 +42,8 @@ var debsoc=document.getElementById("debsoc");
 var maha=document.getElementById("maha");
 var kavyanjali=document.getElementById("kavyanjali");
 var spell=document.getElementById("spell");
-var close=document.getElementsByClassName("close");
+var close=document.querySelectorAll(".close");
+console.log('yash',close);
 nzest.addEventListener("click",function(){
     overlaynzest.style.width="100%";
     overlaynzest.style.left="0";
@@ -95,22 +96,22 @@ spic.addEventListener("click",function(){
     overlaysm.style.width="100%";
     overlaysm.style.left="0";
 });
-srw.addEventListener("click",function(){
-    overlaysrw.style.width="100%";
-    overlaysrw.style.left="0";
-});
-bookh.addEventListener("click",function(){
-    overlaybookh.style.width="100%";
-    overlaybookh.style.left="0";
-});
+// srw.addEventListener("click",function(){
+//     overlaysrw.style.width="100%";
+//     overlaysrw.style.left="0";
+// });
+// bookh.addEventListener("click",function(){
+//     overlaybookh.style.width="100%";
+//     overlaybookh.style.left="0";
+// });
 lw.addEventListener("click",function(){
     overlaylw.style.width="100%";
     overlaylw.style.left="0";
 });
-thunt.addEventListener("click",function(){
-    overlayth.style.width="100%";
-    overlayth.style.left="0";
-});
+// thunt.addEventListener("click",function(){
+//     overlayth.style.width="100%";
+//     overlayth.style.left="0";
+// });
 meet.addEventListener("click",function(){
     overlaymeet.style.width="100%";
     overlaymeet.style.left="0";
